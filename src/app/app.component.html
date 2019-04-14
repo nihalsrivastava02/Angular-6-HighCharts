@@ -1,0 +1,18 @@
+<div style="text-align:center">
+  <div class = "align">
+    <mat-chip-list>
+      <mat-chip color="primary" selected class="space">last 1H</mat-chip>
+        <mat-chip color="primary" class ="space">last 1D</mat-chip>
+        <mat-chip color="primary" class ="space">last 1W</mat-chip>
+        <mat-chip color="primary" class ="space">last 1M</mat-chip>
+        <mat-chip color="primary" class ="space">custom</mat-chip>
+      </mat-chip-list>
+  </div>
+  <div>
+      <highcharts-chart
+        [Highcharts] = "highcharts" 
+        [options] = "chartOptions" 
+        style = "width: 100%; height: 100%; display: block; margin-top:0%; margin-bottom: 100%;">
+    </highcharts-chart>
+    </div>
+</div>
